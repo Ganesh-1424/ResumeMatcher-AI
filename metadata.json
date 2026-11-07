@@ -1,0 +1,6 @@
+{
+  "name": "AI Resume & Job Matcher",
+  "description": "Smart resume analysis and job matching platform with ATS scoring and skill gap insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

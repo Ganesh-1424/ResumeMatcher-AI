@@ -1,0 +1,48 @@
+{
+  "name": "ai-resume-job-matcher-backend",
+  "version": "1.0.0",
+  "description": "Backend API server for AI Resume & Job Matcher",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "init-db": "node init-db.js",
+    "migrate": "node init-db.js",
+    "test": "node test-task31-e2e.js",
+    "test:security": "node test-task33-security.js",
+    "test:production": "node test-task34-production-verification.js",
+    "test:jd-limit": "node test-job-description-limit.js",
+    "test:jd-paste": "node test-job-description-copy-paste.js",
+    "test:jwt": "node test-jwt-workflow.js",
+    "test:all": "node test-task31-e2e.js && node test-task33-security.js && node test-task34-production-verification.js && node test-job-description-limit.js && node test-job-description-copy-paste.js && node test-google-auth.js && node test-jwt-workflow.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "resume-matcher",
+    "ats-score",
+    "express",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.1",
+    "google-auth-library": "^11.3.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mammoth": "^1.13.0",
+    "multer": "^2.4.0",
+    "mysql2": "^3.12.0",
+    "pdf-parse": "^2.4.5",
+    "pdfkit": "^0.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
